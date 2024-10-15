@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body style="margin-bottom: -150px">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/advantage_1.svg" alt="" />
+          <p>Застёжка Pushbutton Deployment</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/advantage_2.svg" alt="" />
+          <p>
+            Нержавеющая стальастёжка<br />
+            Pushbutton Deployment
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/advantage_3.svg" alt="" />
+          <p>Минеральное стекло</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/advantage_4.svg" alt="" />
+          <p>Титановый ремешок</p>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
