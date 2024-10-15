@@ -93,20 +93,20 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-@media (max-width: 600px) {  
+@include swiper_600{
   .swiper {  
-      width: 90%; 
+    width: 90%; 
   }  
-}  
+}
 
-@media (min-width: 601px) and (max-width: 1000px) {  
+@include swiper_1000{
   .swiper {  
-      width: 80%;
+    width: 80%;
   }  
-}  
+}
 
-@media (min-width: 1001px) {  
+@include swiper_1001{
   .swiper {  
-      width: 70%; 
+    width: 70%; 
   }  
-}  
+}

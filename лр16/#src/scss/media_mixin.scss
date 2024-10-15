@@ -48,3 +48,21 @@
     @content;
   }
 }
+
+@mixin swiper_600 {
+  @media (max-width: 600px){
+    @content;
+  }
+}
+
+@mixin swiper_1000{
+  @media (min-width: 601px) and (max-width: 1000px) {  
+    @content; 
+  }  
+}
+
+@mixin swiper_1001{
+  @media (min-width: 1001px) {  
+    @content;
+  }  
+}
