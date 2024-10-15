@@ -168,8 +168,9 @@ select {
 }
 
 .swiper {
-  width: 70%;
-  height: 600px;
+  width: 100%;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .swiper-slide {
@@ -189,6 +190,24 @@ select {
 .swiper-slide p {
   margin-bottom: 15px;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media (min-width: 1001px) {
+  .swiper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper {
+    width: 90%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+  .swiper {
+    width: 80%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

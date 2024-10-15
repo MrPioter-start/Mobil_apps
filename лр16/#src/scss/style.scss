@@ -76,8 +76,8 @@
 }
 
 .swiper {
-  width: 70%;
-  height: 600px;
+  width: 100%;
+  transition: width 0.3s ease;
 }
 .swiper-slide {
   display: inline-grid;
@@ -92,3 +92,21 @@
   margin-bottom: 15px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+@media (max-width: 600px) {  
+  .swiper {  
+      width: 90%; 
+  }  
+}  
+
+@media (min-width: 601px) and (max-width: 1000px) {  
+  .swiper {  
+      width: 80%;
+  }  
+}  
+
+@media (min-width: 1001px) {  
+  .swiper {  
+      width: 70%; 
+  }  
+}  

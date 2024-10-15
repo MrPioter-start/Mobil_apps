@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body class="body-swiper" style="margin-bottom: -150px">
+  <body style="margin-bottom: -150px">
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -48,6 +48,15 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        responsive: {
+          0: {},
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
         },
       });
     </script>
